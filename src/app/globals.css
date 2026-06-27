@@ -4,6 +4,14 @@
   --background: #ffffff;
   --foreground: #171717;
 }
+@theme{
+  --color-graphite: #353535;
+  --color-stormy-teal : #3c6e71;
+  --color-off-white: #f8f9fA; 
+  --color-yale-blue: #284b63;
+  --color-dust-gray: #d9d9d9;
+
+}
 
 @theme inline {
   --color-background: var(--background);
