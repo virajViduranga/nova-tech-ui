@@ -13,7 +13,7 @@ export default function LoginPage() {
             <div>
               {/* Logo Area */}
               <div className="flex items-center gap-3 mb-12">
-                <img src="/nova-tech-logo.png" alt="" className='w-35 h-20'/>
+                <img src="/nova-tech-logo.png" alt="" className='w-30'/>
               </div>
               
               {/* Marketing Text */}
@@ -23,6 +23,12 @@ export default function LoginPage() {
               <p className="text-gray-500 mt-5 text-sm max-w-xs leading-relaxed">
                 Log in to access your tools, and personalized settings in one minimal space.
               </p>
+
+          <div>
+            </div>
+            <div className="flex items-center gap-3 mb-8">
+              <img src="/nova-tech-logo.png" alt="" className="w-30" />
+
             </div>
 
             {/* Decorative element mimicking the product cards */}
@@ -91,7 +97,7 @@ export default function LoginPage() {
             </div>
           </div>
         </div>
-
+</div>
       </div>
     </div>
   );
