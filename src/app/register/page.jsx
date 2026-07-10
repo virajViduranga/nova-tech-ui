@@ -6,8 +6,8 @@ export default function LoginPage() {
       <div className="bg-[#F2F2F0] w-full max-w-5xl min-h-[700px] rounded-[2.5rem] p-4 sm:p-6 shadow-xl flex flex-col md:flex-row gap-6 relative overflow-hidden">
         <div className="hidden md:flex flex-1 bg-white rounded-[2rem] p-8 flex-col justify-between relative overflow-hidden shadow-sm">
           <div>
-            <div className="flex items-center gap-3 mb-12">
-              <img src="/nova-tech-logo.png" alt="" className="w-35 h-20" />
+            <div className="flex items-start gap-3 mb-12">
+              <img src="/nova-tech-logo.png" alt="" className="w-30" />
             </div>
 
             <h1 className="text-5xl font-light tracking-tight text-gray-800 leading-tight">
