@@ -2,12 +2,17 @@ import React from "react";
 
 export default function LoginPage() {
   return (
+    // 1. Main Background Wrapper
     <div className="min-h-screen bg-[#E5E5E5] flex items-center justify-center p-4 sm:p-6">
+      
+      {/* 2. Inner White/Gray Card */}
       <div className="bg-[#F2F2F0] w-full max-w-5xl min-h-[700px] rounded-[2.5rem] p-4 sm:p-6 shadow-xl flex flex-col md:flex-row gap-6 relative overflow-hidden">
+        
+        {/* --- LEFT PANEL (Branding & Image) --- */}
         <div className="hidden md:flex flex-1 bg-white rounded-[2rem] p-8 flex-col justify-between relative overflow-hidden shadow-sm">
-
-            </div>
-
+          
+          {/* Text Content */}
+          <div>
             <h1 className="text-5xl font-light tracking-tight text-gray-800 leading-tight">
               Welcome to
               <br />
@@ -19,15 +24,18 @@ export default function LoginPage() {
             </p>
           </div>
 
+          {/* Image Content */}
           <div className="bg-[#F8F8F8] h-56 rounded-3xl mt-8 relative flex items-center justify-center border border-gray-100">
             <img src="/tech-items.jpeg" alt="" className="object-cover" />
-
             <div className="absolute bottom-4 left-4 bg-white px-4 py-2 rounded-full shadow-sm text-xs font-semibold flex items-center gap-1">
               <span className="text-black">✦ Premium</span>
             </div>
           </div>
-        </div>
+          
+        </div> {/* <-- This closing tag was previously at the top, breaking the layout */}
 
+
+        {/* --- RIGHT PANEL (Login Form) --- */}
         <div className="flex-1 flex items-center justify-center p-4">
           <div className="w-full max-w-sm">
             <h2 className="text-2xl font-semibold mb-2 text-gray-800">
