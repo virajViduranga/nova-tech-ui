@@ -32,12 +32,11 @@ const ProductCard = () => {
         px-5
         py-2
         rounded-full
-        bg-gray-100
-        text-[#1F2937]
+        bg-gray-800
+        text-gray-300
         font-medium
         text-xs
-        dark:bg-gray-800
-        dark:text-gray-300
+       
       ">
         ✦ Ear Phones
       </span>
@@ -66,7 +65,7 @@ const ProductCard = () => {
         text-[#1F2937]
         mb-2
         transition-colors
-        dark:text-white
+        
       ">
         Samsung ear buds pro
       </h3>
@@ -77,7 +76,7 @@ const ProductCard = () => {
         font-semibold
         text-[#1F2937]
         mb-4
-        dark:text-gray-100
+       
       ">
         $230
       </p>
@@ -89,7 +88,7 @@ const ProductCard = () => {
         leading-relaxed
         mb-10
         flex-grow
-        dark:text-gray-400
+       
       ">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sint repellat veniam! Laudantium quam porro suscipit quas ut explicabo dignissimos fuga modi necessitatibus exercitationem.
       </p>
@@ -113,9 +112,7 @@ const ProductCard = () => {
             duration-200
             hover:bg-gray-800
             active:bg-gray-700
-            dark:bg-gray-50
-            dark:text-gray-950
-            dark:hover:bg-white
+          
           ">
             Buy Now <span aria-hidden="true">→</span>
           </a>
@@ -139,11 +136,7 @@ const ProductCard = () => {
             hover:bg-gray-50
             hover:border-gray-300
             active:bg-gray-100
-            dark:bg-transparent
-            dark:border-gray-800
-            dark:text-gray-300
-            dark:hover:bg-gray-900
-            dark:hover:border-gray-700
+            
           ">
             More Details
           </a>
