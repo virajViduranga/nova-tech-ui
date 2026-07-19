@@ -1,43 +1,13 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
+import NavBar from "../../components/Navbar";
 import { Compass, ArrowRight, Settings, Layers, Shield } from "lucide-react";
 
 export default function LandingPage() {
   return (
-    <div className="min-h-screen bg-[#f5f5f5] text-gray-900 font-sans">
-      <nav className="flex items-center justify-between px-8 py-6 max-w-7xl mx-auto">
-        <div className="flex items-center gap-2">
-          <Compass className="w-6 h-6 text-slate-800" />
-          <span className="text-xl font-semibold tracking-wide">nova tech</span>
-        </div>
-
-        <div className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-600">
-          <Link href="#features" className="hover:text-black transition-colors">
-            Features
-          </Link>
-          <Link href="#products" className="hover:text-black transition-colors">
-            Products
-          </Link>
-          <Link href="#about" className="hover:text-black transition-colors">
-            About
-          </Link>
-        </div>
-
-        <div className="flex items-center gap-4">
-          <Link
-            href="/login"
-            className="text-sm font-medium text-gray-600 hover:text-black transition-colors"
-          >
-            Sign In
-          </Link>
-          <Link
-            href="/register"
-            className="px-5 py-2.5 text-sm font-medium text-white bg-slate-800 rounded-full hover:bg-slate-700 transition-colors"
-          >
-            Create Account
-          </Link>
-        </div>
-      </nav>
+    <div className="min-h-screen bg-[#ededed] text-gray-900 font-sans">
+      <NavBar/>
 
       {/* Hero Section */}
       <main className="max-w-7xl mx-auto px-8 pt-20 pb-24 flex flex-col md:flex-row items-center justify-between gap-12">
@@ -58,7 +28,7 @@ export default function LandingPage() {
           <div className="flex items-center gap-4 pt-4">
             <Link
               href="/register"
-              className="flex items-center gap-2 px-6 py-3.5 text-sm font-medium text-white bg-slate-800 rounded-full hover:bg-slate-700 transition-all shadow-sm"
+              className="flex items-center gap-2 px-6 py-3.5 text-sm font-medium text-white bg-slate-800 rounded-full hover:bg-slate-700 hover:gap-3 transition-all shadow-sm"
             >
               Get Started <ArrowRight className="w-4 h-4" />
             </Link>
@@ -73,10 +43,8 @@ export default function LandingPage() {
 
         <div className="flex-1 w-full flex justify-center lg:justify-end">
           <div className="w-full max-w-lg bg-white rounded-3xl p-8 shadow-sm border border-gray-100 flex items-center justify-center min-h-[400px]">
-            <p className="text-gray-400 text-sm">
-              [ Place your beautiful hardware image here ]
-            </p>
-            {/* You can replace the <p> tag above with an <img src="/your-image.png" /> tag */}
+            <img src="tech-items.jpeg" alt="" className="w-full" />
+      
           </div>
         </div>
       </main>
