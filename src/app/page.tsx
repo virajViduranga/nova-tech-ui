@@ -54,7 +54,7 @@ export default function LandingPage() {
 
       <section id="cards" className="max-w-full px-6 h-screen bg-gray-300 flex items-center justify-between">
 
-      <ProductCard title="Samsung Ear Buds pro" price="23000"/>
+      <ProductCard/>
 
 
       </section>

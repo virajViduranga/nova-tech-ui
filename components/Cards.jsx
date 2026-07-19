@@ -2,46 +2,155 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 
-export default function ProductCard({ title, price }) {
+
+const ProductCard = () => {
   return (
-    <div className="group flex w-full max-w-sm flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl dark:border-slate-800 dark:bg-slate-900">
+    <div className="
+      group
+      max-w-[400px]
+      w-full
+      rounded-[2.5rem]
+      bg-white
+      p-10
+      flex
+      flex-col
+      items-center
+      text-center
+      border
+      border-gray-100
+      shadow-[0_20px_50px_-15px_rgba(0,0,0,0.05)]
+      transition-all
+      duration-300
+      ease-in-out
+      hover:shadow-2xl
+      hover:scale-[1.02]
+    ">
       
-      {/* Image Container */}
-      <div className="relative h-64 w-full overflow-hidden bg-slate-100 dark:bg-slate-800">
+      {/* Category Badge */}
+      <span className="
+        mb-8
+        px-5
+        py-2
+        rounded-full
+        bg-gray-100
+        text-[#1F2937]
+        font-medium
+        text-xs
+        dark:bg-gray-800
+        dark:text-gray-300
+      ">
+        ✦ Ear Phones
+      </span>
+
+      {/* Product Image */}
+      <div className="relative w-full aspect-[4/3] mb-8 overflow-hidden rounded-2xl">
         <Image
           src=""
-          alt={title}
+          alt="image"
           fill
-          className="object-cover transition-transform duration-500 group-hover:scale-110"
+          className="
+            object-contain
+            p-4
+            transition-transform
+            duration-300
+            group-hover:scale-105
+          "
+          sizes="(max-width: 400px) 100vw, 400px"
         />
       </div>
 
-      {/* Content Container */}
-      <div className="flex flex-col p-5">
-        {/* Title and Price */}
-        <div className="mb-4 flex items-center justify-between gap-4">
-          <h3 className="text-lg font-semibold text-slate-800 line-clamp-1 dark:text-white">
-            {title}
-          </h3>
-          <span className="text-xl font-bold text-blue-600 dark:text-blue-400">
-            ${price}
-          </span>
-        </div>
+      {/* Product Title */}
+      <h3 className="
+        text-2xl
+        font-bold
+        text-[#1F2937]
+        mb-2
+        transition-colors
+        dark:text-white
+      ">
+        Samsung ear buds pro
+      </h3>
 
-        {/* Buttons Container */}
-        <div className="mt-auto flex gap-3">
-          <button className="flex-1 rounded-lg bg-blue-600 px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-blue-700 active:bg-blue-800">
-            Buy Now
-          </button>
-          
-          <Link 
-            href="#"
-            className="flex-1 rounded-lg border border-slate-300 px-4 py-2.5 text-center text-sm font-semibold text-slate-700 transition-colors hover:bg-slate-50 dark:border-slate-700 dark:text-slate-200 dark:hover:bg-slate-800"
-          >
+      {/* Product Price */}
+      <p className="
+        text-xl
+        font-semibold
+        text-[#1F2937]
+        mb-4
+        dark:text-gray-100
+      ">
+        $230
+      </p>
+
+      {/* Product Description */}
+      <p className="
+        text-sm
+        text-[#6B7280]
+        leading-relaxed
+        mb-10
+        flex-grow
+        dark:text-gray-400
+      ">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sint repellat veniam! Laudantium quam porro suscipit quas ut explicabo dignissimos fuga modi necessitatibus exercitationem.
+      </p>
+
+      {/* Buttons */}
+      <div className="w-full grid grid-cols-2 gap-4">
+         
+          <a className="
+            flex
+            items-center
+            justify-center
+            gap-2
+            px-8
+            py-4
+            rounded-full
+            bg-[#1F2937]
+            text-white
+            font-semibold
+            text-sm
+            transition-all
+            duration-200
+            hover:bg-gray-800
+            active:bg-gray-700
+            dark:bg-gray-50
+            dark:text-gray-950
+            dark:hover:bg-white
+          ">
+            Buy Now <span aria-hidden="true">→</span>
+          </a>
+       
+         
+          <a className="
+            flex
+            items-center
+            justify-center
+            px-8
+            py-4
+            rounded-full
+            bg-white
+            text-[#1F2937]
+            font-semibold
+            text-sm
+            border
+            border-gray-200
+            transition-all
+            duration-200
+            hover:bg-gray-50
+            hover:border-gray-300
+            active:bg-gray-100
+            dark:bg-transparent
+            dark:border-gray-800
+            dark:text-gray-300
+            dark:hover:bg-gray-900
+            dark:hover:border-gray-700
+          ">
             More Details
-          </Link>
-        </div>
+          </a>
+        
       </div>
     </div>
   );
-}
+};
+
+export default ProductCard;
