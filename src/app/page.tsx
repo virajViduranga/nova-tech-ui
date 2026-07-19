@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import NavBar from "../../components/Navbar";
+import ProductCard from "../../components/Cards";
 import { Compass, ArrowRight, Settings, Layers, Shield } from "lucide-react";
 
 export default function LandingPage() {
@@ -48,6 +49,17 @@ export default function LandingPage() {
           </div>
         </div>
       </main>
+
+
+
+      <section id="cards" className="max-w-full px-6 h-screen bg-gray-300 flex items-center justify-between">
+
+      <ProductCard title="Samsung Ear Buds pro" price="23000"/>
+
+
+      </section>
+
+
 
       {/* Features Section */}
       <section id="features" className="bg-white py-24">
