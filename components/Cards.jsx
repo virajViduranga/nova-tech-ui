@@ -105,7 +105,7 @@ const ProductCard = () => {
             px-8
             py-4
             rounded-full
-            bg-[#1F2937]
+            bg-yale-blue 
             text-white
             font-semibold
             text-sm

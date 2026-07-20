@@ -10,14 +10,14 @@ export default function Navbar() {
           <img src="nova-tech-logo.png" alt="" className="w-26 h-16 pb-1" />
         </div>
 
-        <div className="hidden w-full max-w-md md:flex items-center justify-center gap-12 text-sm font-medium text-gray-600 bg-white rounded-4xl  py-4 hover:scale-110 duration-400 transition-all">
-          <Link href="#features" className="hover:font-bold  transition-all">
+        <div className="hidden w-full max-w-md md:flex items-center justify-center gap-12 text-sm font-medium text-gray-400 bg-white rounded-4xl  py-4 hover:scale-110 duration-400 transition-all">
+          <Link href="#features" className="hover:text-black  transition-all">
             Features
           </Link>
-          <Link href="#products" className="hover:font-bold  transition-all">
+          <Link href="#products" className="hover:text-black   transition-all">
             Products
           </Link>
-          <Link href="#about" className="hover:font-bold  transition-all">
+          <Link href="#about" className="hover:text-black   transition-all">
             About
           </Link>
         </div>
@@ -34,13 +34,13 @@ export default function Navbar() {
         <div className="flex items-center gap-6 bg-white rounded-4xl px-16 py-2 hover:scale-110 duration-400 transition-all">
           <Link
             href="/login"
-            className="text-sm font-medium text-gray-600 hover:font-bold  transition-all"
+            className="text-sm font-medium text-gray-400 hover:text-black  transition-all"
           >
             Sign In
           </Link>
           <Link
             href="/register"
-            className="px-5 py-2.5 text-sm font-medium text-white bg-slate-800 rounded-full hover:bg-slate-700 transition-all"
+            className="px-5 py-2.5 text-sm font-medium text-white bg-yale-blue rounded-full hover:bg-slate-700 transition-all"
           >
             Create Account
           </Link>
