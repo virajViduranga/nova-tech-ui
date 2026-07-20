@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import NavBar from "../../components/Navbar";
 import ProductCard from "../../components/Cards";
+import Footer from "../../components/Footer";
 import { Compass, ArrowRight, Settings, Layers, Shield } from "lucide-react";
 
 export default function LandingPage() {
@@ -128,6 +129,8 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
+       <Footer />
     </div>
+   
   );
 }
