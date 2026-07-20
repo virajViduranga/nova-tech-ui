@@ -17,7 +17,7 @@ export default function LandingPage() {
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-gray-200 text-xs font-semibold text-slate-800 tracking-wide">
             ✦ Premium Tools
           </div>
-          <h1 className="text-5xl md:text-7xl font-semibold leading-tight tracking-tight text-gray-900">
+          <h1 className="text-5xl md:text-7xl font-semibold leading-tight tracking-tight text-yale-blue">
             All your tools.
             <br />
             <span className="text-gray-500">One minimal space.</span>
@@ -30,7 +30,7 @@ export default function LandingPage() {
           <div className="flex items-center gap-4 pt-4">
             <Link
               href="/register"
-              className="flex items-center gap-2 px-6 py-3.5 text-sm font-medium text-white bg-slate-800 rounded-full hover:bg-slate-700 hover:gap-3 transition-all shadow-sm"
+              className="flex items-center gap-2 px-6 py-3.5 text-sm font-medium text-white bg-yale-blue  rounded-full hover:bg-slate-700 hover:gap-3 transition-all shadow-sm"
             >
               Get Started <ArrowRight className="w-4 h-4" />
             </Link>
