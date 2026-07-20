@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import EarBuds from "../public/ear-buds.png"
 
 
 
@@ -44,7 +45,7 @@ const ProductCard = () => {
       {/* Product Image */}
       <div className="relative w-full aspect-[4/3] mb-8 overflow-hidden rounded-2xl">
         <Image
-          src=""
+          src={EarBuds}
           alt="image"
           fill
           className="
