@@ -6,8 +6,8 @@ export default function Navbar() {
   return (
     <>
       <nav className="flex items-center justify-between px-8 py-6 max-w-full mx-auto shadow-sm">
-        <div className="flex items-center gap-2 bg-white rounded-2xl">
-          <img src="nova-tech-logo.png" alt="" className="w-32 h-18" />
+        <div className="flex items-center bg-white rounded-2xl">
+          <img src="nova-tech-logo.png" alt="" className="w-26 h-16 pb-1" />
         </div>
 
         <div className="hidden w-full max-w-md md:flex items-center justify-center gap-12 text-sm font-medium text-gray-600 bg-white rounded-4xl  py-4 hover:scale-110 duration-400 transition-all">

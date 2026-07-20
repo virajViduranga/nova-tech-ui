@@ -52,9 +52,26 @@ export default function LandingPage() {
 
 
 
-      <section id="cards" className="max-w-full px-6 h-screen bg-gray-300 flex items-center justify-between">
+      <section id="cards" className="max-w-full px-6 h-200 bg-gray-200 flex flex-nowrap gap-6 items-center justify-start overflow-x-auto pb-4">
 
+     <div className="shrink-0">
       <ProductCard/>
+    </div>
+    <div className="shrink-0">
+      <ProductCard/>
+    </div>
+    <div className="shrink-0">
+      <ProductCard/>
+    </div>
+    <div className="shrink-0">
+     <ProductCard/>
+    </div>
+    <div className="shrink-0">
+     <ProductCard/>
+    </div>
+    <div className="shrink-0">
+     <ProductCard/>
+    </div>
 
 
       </section>
