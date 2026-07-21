@@ -18,7 +18,7 @@ export default function LandingPage() {
     This keeps your text aligned with the rest of your max-w-7xl website,
     but we limit it to half the width on desktop (md:w-1/2).
   */}
-  <div className="w-full max-w-7xl mx-auto px-8 pt-20 pb-24 relative z-10">
+  <div className="w-full max-w-full mx-auto px-8 pt-20 pb-24 relative z-10">
     <div className="w-full md:w-1/2 space-y-8 pr-0 md:pr-12">
       <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-gray-200 text-xs font-semibold text-slate-800 tracking-wide">
         ✦ Premium Tools
@@ -57,9 +57,9 @@ export default function LandingPage() {
   */}
   <div className="hidden md:block absolute top-0 right-0 w-[55%] h-full z-0 md:[clip-path:polygon(15%_0,100%_0,100%_100%,0_100%)]">
     <img
-      src="tech-items.jpeg"
+      src="phones.png"
       alt="Premium tools"
-      className="w-full h-full object-cover"
+      className="w-full h-full object-contain"
     />
   </div>
 
