@@ -12,44 +12,70 @@ export default function LandingPage() {
       <NavBar/>
 
       {/* Hero Section */}
-      <main className="max-w-7xl mx-auto px-8 pt-20 pb-24 flex flex-col md:flex-row items-center justify-between gap-12">
-        <div className="flex-1 space-y-8">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-gray-200 text-xs font-semibold text-slate-800 tracking-wide">
-            ✦ Premium Tools
-          </div>
-          <h1 className="text-5xl md:text-7xl font-semibold leading-tight tracking-tight text-yale-blue">
-            All your tools.
-            <br />
-            <span className="text-gray-500">One minimal space.</span>
-          </h1>
-          <p className="text-lg text-gray-600 max-w-md leading-relaxed">
-            Create an account to access your premium gadgets, manage your
-            settings, and control your workflow without the clutter.
-          </p>
+      <main className="relative w-full min-h-[80vh] flex flex-col md:justify-center overflow-hidden bg-gray-50">
+  {/* 
+    1. TEXT CONTAINER 
+    This keeps your text aligned with the rest of your max-w-7xl website,
+    but we limit it to half the width on desktop (md:w-1/2).
+  */}
+  <div className="w-full max-w-7xl mx-auto px-8 pt-20 pb-24 relative z-10">
+    <div className="w-full md:w-1/2 space-y-8 pr-0 md:pr-12">
+      <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-gray-200 text-xs font-semibold text-slate-800 tracking-wide">
+        ✦ Premium Tools
+      </div>
+      <h1 className="text-5xl md:text-7xl font-semibold leading-tight tracking-tight text-yale-blue">
+        All your tools.
+        <br />
+        <span className="text-gray-500">One minimal space.</span>
+      </h1>
+      <p className="text-lg text-gray-600 max-w-md leading-relaxed">
+        Create an account to access your premium gadgets, manage your
+        settings, and control your workflow without the clutter.
+      </p>
 
-          <div className="flex items-center gap-4 pt-4">
-            <Link
-              href="/register"
-              className="flex items-center gap-2 px-6 py-3.5 text-sm font-medium text-white bg-yale-blue  rounded-full hover:bg-slate-700 hover:gap-3 transition-all shadow-sm"
-            >
-              Get Started <ArrowRight className="w-4 h-4" />
-            </Link>
-            <Link
-              href="#learn-more"
-              className="px-6 py-3.5 text-sm font-medium text-slate-800 bg-white rounded-full border border-gray-200 hover:border-gray-300 transition-all shadow-sm"
-            >
-              Learn More
-            </Link>
-          </div>
-        </div>
+      <div className="flex items-center gap-4 pt-4">
+        <Link
+          href="/register"
+          className="flex items-center gap-2 px-6 py-3.5 text-sm font-medium text-white bg-yale-blue rounded-full hover:bg-slate-700 hover:gap-3 transition-all shadow-sm"
+        >
+          Get Started <ArrowRight className="w-4 h-4" />
+        </Link>
+        <Link
+          href="#learn-more"
+          className="px-6 py-3.5 text-sm font-medium text-slate-800 bg-white rounded-full border border-gray-200 hover:border-gray-300 transition-all shadow-sm"
+        >
+          Learn More
+        </Link>
+      </div>
+    </div>
+  </div>
 
-        <div className="flex-1 w-full flex justify-center lg:justify-end">
-          <div className="w-full max-w-lg bg-white rounded-3xl p-8 shadow-sm border border-gray-100 flex items-center justify-center min-h-[400px]">
-            <img src="tech-items.jpeg" alt="" className="w-full" />
-      
-          </div>
-        </div>
-      </main>
+  {/* 
+    2. DESKTOP IMAGE (The Angled Cut)
+    This div is absolute, meaning it sticks to the right side of the screen.
+    The md:[clip-path:...] class creates that diagonal slant.
+  */}
+  <div className="hidden md:block absolute top-0 right-0 w-[55%] h-full z-0 md:[clip-path:polygon(15%_0,100%_0,100%_100%,0_100%)]">
+    <img
+      src="tech-items.jpeg"
+      alt="Premium tools"
+      className="w-full h-full object-cover"
+    />
+  </div>
+
+  {/* 
+    3. MOBILE IMAGE
+    On small screens, a side-by-side angle doesn't fit well. 
+    This shows the image normally underneath the text for mobile users. 
+  */}
+  <div className="w-full h-[400px] md:hidden relative z-0">
+    <img
+      src="tech-items.jpeg"
+      alt="Premium tools"
+      className="w-full h-full object-cover"
+    />
+  </div>
+</main>
 
 
 
