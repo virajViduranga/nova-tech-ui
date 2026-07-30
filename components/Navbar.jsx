@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Navbar() {
   return (
     <>
-      <nav className="flex bg-slate-300 items-center justify-between px-8 py-6 max-w-full mx-auto shadow-sm">
+      <nav className="flex bg-gray-300 items-center justify-between px-8 py-6 max-w-full mx-auto shadow-sm">
         <div className="flex items-center bg-white rounded-2xl">
           <img src="nova-tech-logo.png" alt="" className="w-26 h-16 pb-1" />
         </div>
