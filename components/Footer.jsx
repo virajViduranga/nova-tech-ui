@@ -21,6 +21,19 @@ export default function Footer(){
 
                         </ul>
                     </div>
+
+
+                     {/* Social Media Links */}
+                    <div>
+                        <h4 className="text-white font-semibold mb-4">Follow Us On</h4>
+                        <ul className="space-y-2">
+                            <li><a href="#" className="text-slate-400 hover:text-white transition-colors cursor-pointer">Facebook</a></li>
+                            <li><a href="#" className="text-slate-400 hover:text-white transition-colors cursor-pointer">Instagram</a></li>
+                            <li><a href="#" className="text-slate-400 hover:text-white transition-colors cursor-pointer">X</a></li>
+                            <li><a href="#" className="text-slate-400 hover:text-white transition-colors cursor-pointer">Tiktok</a></li>
+
+                        </ul>
+                    </div>
                 </div>
             </div>
         </footer>
