@@ -11,8 +11,8 @@ const FilterSidebar = () => {
   ];
 
   return (
-    <aside className="w-64 p-4 text-gray-900 bg-[#f8f8f8]">
-      {/* Added bg-[#f8f8f8] to force the light background */}
+    <aside className="w-80 p-4 text-gray-900 bg-[#f8f8f8] min-h-screen">
+      
       
       <h2 className="text-2xl font-bold mb-8">Filters</h2>
 

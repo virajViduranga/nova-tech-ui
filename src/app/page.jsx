@@ -57,7 +57,7 @@ export default function LandingPage() {
   */}
   <div className="hidden md:block absolute top-0 right-0 w-[55%] h-full z-0 md:[clip-path:polygon(15%_0,100%_0,100%_100%,0_100%)]">
     <img
-      src="phones.png"
+      src="iPh17-pro-max-img.webp"
       alt="Premium tools"
       className="w-full h-full object-contain"
     />
