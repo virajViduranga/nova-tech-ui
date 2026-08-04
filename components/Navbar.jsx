@@ -69,13 +69,13 @@ export default function Navbar() {
         <div className="md:hidden flex flex-col w-full bg-gray-300 px-8 pb-6 gap-4 absolute z-40 shadow-md">
           {/* Mobile Links */}
           <div className="flex flex-col items-center gap-4 text-sm font-medium text-gray-400 bg-white rounded-3xl py-4 px-6">
-            <Link href="#features" className="hover:text-black transition-all" onClick={() => setIsMobileMenuOpen(false)}>
+            <Link href="#features" className="hover:text-black transition-all border-b " onClick={() => setIsMobileMenuOpen(false)}>
               Features
             </Link>
-            <Link href="#products" className="hover:text-black transition-all" onClick={() => setIsMobileMenuOpen(false)}>
+            <Link href="#products" className="hover:text-black transition-all border-b " onClick={() => setIsMobileMenuOpen(false)}>
               Products
             </Link>
-            <Link href="#about" className="hover:text-black transition-all" onClick={() => setIsMobileMenuOpen(false)}>
+            <Link href="#about" className="hover:text-black transition-all border-b " onClick={() => setIsMobileMenuOpen(false)}>
               About
             </Link>
           </div>
