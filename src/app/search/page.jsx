@@ -6,8 +6,9 @@ import Footer from "../../../components/Footer";
 export default function SearchPage() {
   return (
     <>
+   
       <div className="max-w-full min-h-screen flex flex-col">
-        <Navbar />
+         <Navbar />
         <div className="flex flex-1 w-full">
           <FilterSidebar />
 
